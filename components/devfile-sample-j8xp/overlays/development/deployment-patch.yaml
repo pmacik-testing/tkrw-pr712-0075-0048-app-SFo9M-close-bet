@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-j8xp
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0048-tenant/tkrw-pr712-0075-0048-app/devfile-sample-j8xp@sha256:9f9e8033ecbf7c94c4d3f95b9f22917b70e9ebf4a70d674ceb1fac3b2fcc8560
+        name: my-nodejs
+        resources: {}
+status: {}
